@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Mi Profile</title>
+      <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body style="text-align:left">
+    <h1>Formulario de Datos</h1>
+      <form  name="form1" onsubmit="return false;">
+        <div>
+            <label for="nombre">Ingresa tu nombre</label>
+            <input id="nombre" type="text" pattern="[A-Za-z]{3,100}" title="Use letras de A/a hasta Z/z" autofocus="autofocus" required><br><br>
+            <label for="apellido">Ingresa tu apellido</label>
+            <input id="apellido" type="text" pattern="[A-Za-z]{3,100}" title="Use letras de A/a hasta Z/z" required><br><br>
+            <label for="dni">Ingresa tu DNI</label>
+            <input id="dni" type="text" pattern="^[0-9]\d{7}$" title="8 dígitos" required><br><br>
+            <label for="direc">Ingresa tu dirección</label>
+            <input id="direc" type="text" pattern="{3,200}" title="Ingrese una dirección válida" required><br><br>
+            <button id="enviar">Enviar Datos</button>
+            <div id="mostrar" style="margin-top: 25px">
+                  <p>Presiona "Enviar Datos" para imprimir los datos en pantalla</p>
+            </div>
+        </div>
+      </form>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
